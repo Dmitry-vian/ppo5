@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Приложение &mdash; документация ППО ПИУ Документация 1.0</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=9ca2116e"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/translations.js?v=9bfe3ffa"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="webpo.migrations package" href="webpo.migrations.html" />
+    <link rel="prev" title="Основной проект" href="ppo5.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            ППО ПИУ Документация
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Проект</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="manage.html">manage модуль</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ppo5.html">Основной проект</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Приложение</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Подпакеты</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="webpo.migrations.html">webpo.migrations package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Подмодули</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-webpo.admin">webpo.admin модуль</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-webpo.apps">webpo.apps модуль</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#webpo.apps.WebpoConfig"><code class="docutils literal notranslate"><span class="pre">WebpoConfig</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-webpo.models">webpo.models модуль</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-webpo.tcp_server">webpo.tcp_server модуль</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#webpo.tcp_server.handle_client"><code class="docutils literal notranslate"><span class="pre">handle_client()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#webpo.tcp_server.send_request_to_client"><code class="docutils literal notranslate"><span class="pre">send_request_to_client()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#webpo.tcp_server.start_tcp_server"><code class="docutils literal notranslate"><span class="pre">start_tcp_server()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-webpo.tests">webpo.tests модуль</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-webpo.urls">webpo.urls модуль</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-webpo.views">webpo.views модуль</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#webpo.views.generate_response"><code class="docutils literal notranslate"><span class="pre">generate_response()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#webpo.views.send_to_client"><code class="docutils literal notranslate"><span class="pre">send_to_client()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-webpo">Содержимое модуля</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ППО ПИУ Документация</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">Проект</a></li>
+      <li class="breadcrumb-item active">Приложение</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/webpo.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>Приложение<a class="headerlink" href="#id1" title="Ссылка на этот заголовок"></a></h1>
+<section id="id2">
+<h2>Подпакеты<a class="headerlink" href="#id2" title="Ссылка на этот заголовок"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="webpo.migrations.html">webpo.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="webpo.migrations.html#module-webpo.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="id3">
+<h2>Подмодули<a class="headerlink" href="#id3" title="Ссылка на этот заголовок"></a></h2>
+</section>
+<section id="module-webpo.admin">
+<span id="webpo-admin"></span><h2>webpo.admin модуль<a class="headerlink" href="#module-webpo.admin" title="Ссылка на этот заголовок"></a></h2>
+</section>
+<section id="module-webpo.apps">
+<span id="webpo-apps"></span><h2>webpo.apps модуль<a class="headerlink" href="#module-webpo.apps" title="Ссылка на этот заголовок"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="webpo.apps.WebpoConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">webpo.apps.</span></span><span class="sig-name descname"><span class="pre">WebpoConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/webpo/apps.html#WebpoConfig"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#webpo.apps.WebpoConfig" title="Link to this definition"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">AppConfig</span></code></p>
+<p>Конфигурация приложения Webpo.
+Это класс конфигурации приложения, который содержит настройки
+для приложения Django.
+Атрибуты:
+default_auto_field (str): Строка, определяющая тип поля, используемого для автоматической генерации идентификаторов модели.</p>
+<p>Name (str): Имя приложения. Это должно совпадать с именем каталога приложения.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="webpo.apps.WebpoConfig.default_auto_field">
+<span class="sig-name descname"><span class="pre">default_auto_field</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'django.db.models.BigAutoField'</span></em><a class="headerlink" href="#webpo.apps.WebpoConfig.default_auto_field" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-webpo.models">
+<span id="webpo-models"></span><h2>webpo.models модуль<a class="headerlink" href="#module-webpo.models" title="Ссылка на этот заголовок"></a></h2>
+</section>
+<section id="module-webpo.tcp_server">
+<span id="webpo-tcp-server"></span><h2>webpo.tcp_server модуль<a class="headerlink" href="#module-webpo.tcp_server" title="Ссылка на этот заголовок"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="webpo.tcp_server.handle_client">
+<span class="sig-prename descclassname"><span class="pre">webpo.tcp_server.</span></span><span class="sig-name descname"><span class="pre">handle_client</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_socket</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/webpo/tcp_server.html#handle_client"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#webpo.tcp_server.handle_client" title="Link to this definition"></a></dt>
+<dd><p>Обрабатывает подключение клиента.</p>
+<dl class="simple">
+<dt>Параметры:</dt><dd><p>client_socket (socket.socket): Сокет клиента для взаимодействия.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="webpo.tcp_server.send_request_to_client">
+<span class="sig-prename descclassname"><span class="pre">webpo.tcp_server.</span></span><span class="sig-name descname"><span class="pre">send_request_to_client</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/webpo/tcp_server.html#send_request_to_client"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#webpo.tcp_server.send_request_to_client" title="Link to this definition"></a></dt>
+<dd><p>Отправляет запрос клиенту и ожидает ответ.</p>
+<dl class="simple">
+<dt>Параметры:</dt><dd><p>data (dict): Данные для отправки клиенту.</p>
+</dd>
+<dt>Возвращает:</dt><dd><p>dict: Ответ от клиента.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="webpo.tcp_server.start_tcp_server">
+<span class="sig-prename descclassname"><span class="pre">webpo.tcp_server.</span></span><span class="sig-name descname"><span class="pre">start_tcp_server</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/webpo/tcp_server.html#start_tcp_server"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#webpo.tcp_server.start_tcp_server" title="Link to this definition"></a></dt>
+<dd><p>Запускает TCP-сервер и обрабатывает подключения клиентов.</p>
+</dd></dl>
+
+</section>
+<section id="module-webpo.tests">
+<span id="webpo-tests"></span><h2>webpo.tests модуль<a class="headerlink" href="#module-webpo.tests" title="Ссылка на этот заголовок"></a></h2>
+</section>
+<section id="module-webpo.urls">
+<span id="webpo-urls"></span><h2>webpo.urls модуль<a class="headerlink" href="#module-webpo.urls" title="Ссылка на этот заголовок"></a></h2>
+<p>Модуль маршрутов URL для приложения.
+Этот модуль определяет маршруты URL и связывает их с представлениями (views) приложения.
+Функции:
+urlpatterns (list): Список маршрутов URL для приложения.</p>
+</section>
+<section id="module-webpo.views">
+<span id="webpo-views"></span><h2>webpo.views модуль<a class="headerlink" href="#module-webpo.views" title="Ссылка на этот заголовок"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="webpo.views.generate_response">
+<span class="sig-prename descclassname"><span class="pre">webpo.views.</span></span><span class="sig-name descname"><span class="pre">generate_response</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">packet_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">response_from_client</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/webpo/views.html#generate_response"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#webpo.views.generate_response" title="Link to this definition"></a></dt>
+<dd><p>Генерирует ответ на основе packetType.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>packet_type (int): Тип пакета (packetType).
+response_from_client (any): Ответ от клиента.</p>
+</dd>
+<dt>Returns:</dt><dd><p>dict: Словарь с ответом, содержащий статус, данные и сообщение.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="webpo.views.send_to_client">
+<span class="sig-prename descclassname"><span class="pre">webpo.views.</span></span><span class="sig-name descname"><span class="pre">send_to_client</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/webpo/views.html#send_to_client"><span class="viewcode-link"><span class="pre">[исходный</span> <span class="pre">код]</span></span></a><a class="headerlink" href="#webpo.views.send_to_client" title="Link to this definition"></a></dt>
+<dd><p>Обрабатывает запросы от веб-клиента и отправляет их клиенту по TCP.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>request (HttpRequest): HTTP-запрос от веб-клиента.</p>
+</dd>
+<dt>Returns:</dt><dd><dl class="simple">
+<dt>JsonResponse: Ответ в формате JSON.</dt><dd><ul class="simple">
+<li><p>Если метод POST: JSON с результатами обработки запроса.</p></li>
+<li><p>Если метод GET: JSON с данными для packetType 3 или 20.</p></li>
+<li><p>Если метод не поддерживается: сообщение об ошибке.</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-webpo">
+<span id="id4"></span><h2>Содержимое модуля<a class="headerlink" href="#module-webpo" title="Ссылка на этот заголовок"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="ppo5.html" class="btn btn-neutral float-left" title="Основной проект" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+        <a href="webpo.migrations.html" class="btn btn-neutral float-right" title="webpo.migrations package" accesskey="n" rel="next">Следующая <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Авторские права 2024, Дмитрий Михалкин. </p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
